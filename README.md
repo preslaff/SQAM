@@ -11,8 +11,7 @@ Clone the repo `git clone https://github.com/preslaff/SQAM.git` and install the 
 
 ## How it works
 
-SQAM uses the `app.py ` flask application to embed, calculate the cosine similarity and then serve the most close predefined question-answer pairs.
-Start the app with `python app.py` and then you can request answers with a front end of your choice or with curl ex.:
+SQAM uses the `app.py` flask application to embed, calculate the cosine similarity and then serve the closest to the user request, predefined question-answer pairs. When started the app scans the directory where it resides for all `json` files and uses them as static database for question answering. Start the app with `python app.py` and then you can request answers with a front end of your choice or with curl ex.:
 
 `curl -X POST http://127.0.0.1:5000/get_answers -H "Content-Type: application/json" -d '{"question": "What is Machine Learning?"}'`
 
