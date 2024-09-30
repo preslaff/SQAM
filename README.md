@@ -3,7 +3,7 @@ Here is a [DEMO VERSION](https://www.cdsv.dev)
 
 ## Abstract
 
-SQAM - Simplified Question Answering Machine is a light weight service for question answering using predefined question-answer pairs in a json database. The application tokenizes the user question using 384 dimensional SBERT embeddings and finds the first three nearest predefined questions. Then give theit answers. This approach is very usefull for lightweight application where user will have limited number of domain specific questions. The example database consists of around 1000 predefined questions about Data Science, Machine Learning and Deep Learning. 
+SQAM - Simplified Question Answering Machine is a light weight service for question answering using predefined question-answer pairs in a json database. The application tokenizes the user question using 384 dimensional SBERT embeddings and finds the first n-nearest predefined questions outputting the pair question-answer, the rank and the similarity score. This approach is very usefull for lightweight application where user will have limited number of domain specific questions. The example database consists of around 1000 predefined questions about Data Science, Machine Learning and Deep Learning. 
 
 ## Install
 
